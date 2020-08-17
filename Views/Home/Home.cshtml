@@ -1,0 +1,12 @@
+﻿@using DotNetNuke.Web.Client.ClientResourceManagement
+@using DotNetNuke.Web.Mvc.Helpers
+@inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage<starter_module_mvc.Models.Home>
+
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>@Model.Message</h2>
+
+@Dnn.LocalizeString("Name"): @Html.TextBoxFor(m => m.Name)
+<button>@Dnn.LocalizeString("Personalize")</button>
