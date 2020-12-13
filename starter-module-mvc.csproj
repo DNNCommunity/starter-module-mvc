@@ -185,7 +185,7 @@
     <DNNFileName>starter_module_mvc</DNNFileName>
     <MSBuildCommunityTasksPath>BuildScripts</MSBuildCommunityTasksPath>
   </PropertyGroup>
-  <Import Project="BuildScripts\ModulePackage.Targets" />
+  <Import Project="BuildScripts\ModulePackage.Targets" Condition="Exists('packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')"/>
   <Target Name="AfterBuild" DependsOnTargets="DeployModule;PackageModule">
   </Target>
   <Import Project="packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets" Condition="Exists('packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets')" />
