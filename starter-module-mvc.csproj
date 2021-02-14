@@ -147,6 +147,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
     <None Include="BuildScripts\ModulePackage.targets" />
     <None Include="packages.config" />
     <Content Include=".gitignore" />
