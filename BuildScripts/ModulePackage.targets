@@ -6,7 +6,7 @@
     <!-- Reusable variables -->
     <PropertyGroup>
       <ProjectName>starter-module-mvc</ProjectName>
-      <WebsiteFolder>..\Website</WebsiteFolder>
+      <WebsiteFolder>Website</WebsiteFolder>
       <DeployFolder>$(WebsiteFolder)\DesktopModules\MVC\starter-module-mvc</DeployFolder>
       <PackageFolder>Package</PackageFolder>
       <PackageResourcesFolder>$(PackageFolder)\Resources</PackageResourcesFolder>
